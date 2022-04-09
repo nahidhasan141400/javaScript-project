@@ -1,0 +1,144 @@
+:root{
+    --dark :#1B1A17;
+    --ye:#F0A500;
+    --oreng:#E45826;
+    --lighrt:#E6D5B8;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: all 0.5s;
+}
+::-webkit-scrollbar{
+    width: 2px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--ye);
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='1000' preserveAspectRatio='none' viewBox='0 0 1440 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1119%26quot%3b)' fill='none'%3e%3crect width='1440' height='1000' x='0' y='0' fill='rgba(27%2c 26%2c 23%2c 1)'%3e%3c/rect%3e%3cpath d='M1037.6072456291763 132.4378667863423L809.8508275877103 238.64242871302918 916.0553895143972 466.39884675449514 1143.8118075558632 360.19428482780825z' fill='rgba(228%2c 88%2c 38%2c 0.24)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M580.0218994260209 753.4765519621326L691.0967950427174 544.5750561402302 482.19529922081506 433.50016052353374 371.12040360411856 642.4016563454361z' fill='rgba(228%2c 88%2c 38%2c 0.24)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M283.84172585653664 613.5944736165335L131.23752459896534 602.9233483334057 120.56639931583751 755.527549590977 273.1706005734088 766.1986748741048z' fill='rgba(228%2c 88%2c 38%2c 0.24)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M683.09 784.45 a225.95 225.95 0 1 0 451.9 0 a225.95 225.95 0 1 0 -451.9 0z' fill='rgba(228%2c 88%2c 38%2c 0.24)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1090.17 318.19 a309.3 309.3 0 1 0 618.6 0 a309.3 309.3 0 1 0 -618.6 0z' fill='rgba(228%2c 88%2c 38%2c 0.24)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-237.36 104.44 a244.22 244.22 0 1 0 488.44 0 a244.22 244.22 0 1 0 -488.44 0z' fill='rgba(228%2c 88%2c 38%2c 0.24)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1119'%3e%3crect width='1440' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: var(--dark);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);    
+}
+header img{
+    height: 80px;
+}
+header h1{
+    font-size: 30px;
+    font-weight: bolder;
+    color: var(--ye);
+}
+#projectlist {
+    width: 100%;
+    position: relative;
+}
+
+#projectlist #titel{
+    width: 100%;
+    padding: 20px 150px;
+}
+#projectlist #titel p{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--ye);
+}
+
+#projectlist #titel p span{
+    font-size: 22px;
+    color: var(--lighrt);
+}
+
+#project-list {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#project-list #card{
+    width: 300px;
+    height: 300px;
+    background: #e6d5b832;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 20px;
+    text-decoration: none;
+    box-shadow: 0px 0px 0px black;
+    transition: all 0.3s;
+}
+
+#project-list #card:hover{
+    transform: scale(110%);
+    box-shadow: 5px 5px 5px black;
+}
+#project-list #card .img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+#project-list #card .img img{
+    width: 100%;
+    height: 200px;
+
+}
+#project-list #card .details{
+    width: 100%;
+    padding: 10px;
+    color: var(--ye);
+
+}
+#project-list #card .details h1{
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--lighrt);
+}
+
+@media (max-width: 650px) {
+    header{
+        height: 70px;
+    }
+    header img{
+        height: 50px;
+    }
+    header h1{
+        font-size: 25px;
+        font-weight: bolder;
+        color: var(--ye);
+    }
+    #projectlist #titel{
+        width: 100%;
+        padding: 20px 10px;
+    }
+    #projectlist #titel p{
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--ye);
+    }
+    
+    #projectlist #titel p span{
+        font-size: 16px;
+        color: var(--lighrt);
+    }
+    body{
+        width: 100%;
+    }
+}
