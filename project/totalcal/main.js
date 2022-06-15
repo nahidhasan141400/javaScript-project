@@ -14,7 +14,7 @@ const tt = document.querySelector('#tt');
 
 // storeg variavl 
 
-  var m = 0;
+  var m = 0; 
   var kg = 0;
   const data = [];
   var j = 0;
